@@ -89,5 +89,13 @@ project-folder/
 <br>│   │── Capstone_04_EDA.ipynb
 <br>│   │── Capstone_05_Modelling.ipynb
 <br>│── 02_Data/
+<br>│   │── Raw
+<br>│   │   │── combined_data.csv
+<br>│   │   │── elevation.csv
+<br>│   │   │── ICAO_aircraft_type.csv
+<br>│   │   │── PIREPs_all.csv
+<br>│   │   │── weather_all.csv
+<br>│   │── Cleaned
+<br>│   │   │── cleaned_data.csv
 <br>│── 03_Report/
 <br>│── 04_Slides/
