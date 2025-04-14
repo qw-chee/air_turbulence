@@ -51,7 +51,7 @@ The following table details the data and their respective sources:
 |  |	Min temp	| MIN_TEMP	| Daily minimum temperature at location	| Integer |
 |  |	Humidity	| HUM	| Daily relative humidity at location	| Integer |
 
-## Key Features
+## Exploratory Data Analyses
 Exploratory Data Analyses (EDA) revealed that these were the key predictors of air turbulence:
 * Wind speed: Turbulence is worse with higher wind speeds
   ![image](https://github.com/user-attachments/assets/92345592-f1ab-4073-9921-de3fca34628c)
