@@ -83,11 +83,11 @@ However, it is recommended that this analysis be repeated with real-time data fr
 project-folder/
 <br>│── README.md
 <br>│── 01_Code/
-<br>│   │── Capstone_01_Importing_Data.ipynb
-<br>│   │── Capstone_02_Data_Cleaning_and_Merging.ipynb
-<br>│   │── Capstone_03_Feature_Engineering.ipynb
-<br>│   │── Capstone_04_EDA.ipynb
-<br>│   │── Capstone_05_Modelling.ipynb
+<br>│   │── Code_01_Importing_Data.ipynb
+<br>│   │── Code_02_Data_Cleaning_and_Merging.ipynb
+<br>│   │── Code_03_Feature_Engineering.ipynb
+<br>│   │── Code_04_EDA.ipynb
+<br>│   │── Code_05_Modelling.ipynb
 <br>│── 02_Data/
 <br>│   │── Raw
 <br>│   │   │── combined_data.csv
