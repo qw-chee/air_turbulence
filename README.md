@@ -1,9 +1,11 @@
 # Predicting Air Turbulence with Machine Learning
+![image](https://github.com/user-attachments/assets/6524f930-dc0f-4bb0-9fcc-c7aa7a3548fb)
 
 ## Description
 Air turbulence is the irregular and unpredictable movement of air that can cause sudden jolts or shakes during a flight. It occurs due unstable airflow around an aircraft. While usually not dangerous, turbulence can be uncomfortable for passengers and pose challenges for pilots.
 
 In recent years, incidents of air turbulence have been on the rise due to climate change, causing significant concern amongst airlines and passengers. Therefore, the aim of this project was to build a machine learning model to accurately predict air turbulence. Predicting turbulence is crucial for enhancing flight safety, reducing discomfort for passengers, and optimizing flight operations. By leveraging multiple data sources, including pilot reports, meteorological data, and aircraft specifications, this model aims to provide more accurate turbulence predictions, helping pilots and airlines make informed decisions.
+![image](https://github.com/user-attachments/assets/bb268555-01fc-4309-915b-4b936f3bc6cb)
 
 ## Data Sources
 All data were extracted from official U.S. government agencies using Application Programming Interface (API):
@@ -52,10 +54,20 @@ The following table details the data and their respective sources:
 ## Key Features
 Exploratory Data Analyses (EDA) revealed that these were the key predictors of air turbulence:
 * Wind speed: Turbulence is worse with higher wind speeds
+  ![image](https://github.com/user-attachments/assets/92345592-f1ab-4073-9921-de3fca34628c)
+
 * Temperature: Turbulence is worse with higher temperatures
+  ![image](https://github.com/user-attachments/assets/28315eb6-27e7-4baa-b7b7-6afcaab24ded)
+
 * Season: Turbulence is worse during winter and calmest during summer
+  ![image](https://github.com/user-attachments/assets/a1ccf44a-15d2-4372-bd0d-7ae1ee686211)
+
 * Time of day: Turbulence is worse during the day and calmest during the night/sunrise
+  ![image](https://github.com/user-attachments/assets/61cb5a9e-94f6-4ed1-821a-90ef76abbcf4)
+
 * Ground elevation: Turbulence is worse when the ground is elevated
+  ![image](https://github.com/user-attachments/assets/e0aee959-030e-4cfb-9953-ff68206ba246)
+
 * Flight level: Turbulence is calmest at cruising altitude (30,000-40,000 ft)
 * Weight class: Turbulence is worse for smaller aircrafts
 
@@ -65,12 +77,7 @@ Four classifiers were built: Random Forest, Decision Tree, XGBoost, and CatBoost
 The aim of these ML models was to learn from the dataset and to predict and classify the severity of turbulence into 3 categories: Light, Moderate, or Severe.
 
 The following table summarizes the performance of the models:
-| Model | Train Accuracy | Test Accuracy | Train-test Difference | Runtime |
-| --- | --- | --- | --- | --- |
-| Decision Tree | 99.66% | 69.84%	| 29.82% | 20.6s |
-| Random Forest | 81.67% | 81.58%	| 0.09% | 1m 50s |
-| XGBoost | 81.85% | 81.58%	| 0.27% | 1m 28s |
-| CatBoost | 81.66% | 81.57%	| 0.09% | 3m 54s |
+![image](https://github.com/user-attachments/assets/33942ac8-e57c-484d-9253-e90d6d573d5b)
 
 By evaluating the trade-offs between train and test accuracy, model discrepancies, and runtime, XGBoost was been identified as the best model for demonstrating superior performance with no significant overfitting.
 
