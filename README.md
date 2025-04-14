@@ -4,7 +4,7 @@
 ## Description
 Air turbulence is the irregular and unpredictable movement of air that can cause sudden jolts or shakes during a flight. It occurs due unstable airflow around an aircraft. While usually not dangerous, turbulence can be uncomfortable for passengers and pose challenges for pilots.
 
-In recent years, incidents of air turbulence have been on the rise due to climate change, causing significant concern amongst airlines and passengers. Therefore, the aim of this project was to build a machine learning model to accurately predict air turbulence. Predicting turbulence is crucial for enhancing flight safety, reducing discomfort for passengers, and optimizing flight operations. By leveraging multiple data sources, including pilot reports, meteorological data, and aircraft specifications, this model aims to provide more accurate turbulence predictions, helping pilots and airlines make informed decisions.
+In recent years, incidents of air turbulence have been on the rise due to climate change, causing significant concern amongst airlines and passengers. Therefore, the aim of this project was to build a machine learning model to accurately predict air turbulence, specifically over U.S mainland from 2015-2024. Predicting turbulence is crucial for enhancing flight safety, reducing discomfort for passengers, and optimizing flight operations. By leveraging multiple data sources, including pilot reports, meteorological data, and aircraft specifications, this model aims to provide more accurate turbulence predictions, helping pilots and airlines make informed decisions.
 ![image](https://github.com/user-attachments/assets/bb268555-01fc-4309-915b-4b936f3bc6cb)
 
 ## Data Sources
@@ -70,6 +70,12 @@ Exploratory Data Analyses (EDA) revealed that these were the key predictors of a
 
 * Flight level: Turbulence is calmest at cruising altitude (30,000-40,000 ft)
 * Weight class: Turbulence is worse for smaller aircrafts
+
+The following density heatmap shows the severity of turbulence across U.S. mainland. 
+![image](https://github.com/user-attachments/assets/eed3eb72-ab34-4eea-abb1-9c33e3c2b184)
+1) Evidently, areas near high altitudes (around the mountains) typically experience greater turbulence. The main reason is that the air is forced up and down as it passes through mountains, and this generates a wide range of turbulent structures that can shake the plane. This turbulence can propagate far from the mountains, sometimes in the form of rolling trains of vortices known as mountain waves. At cruising altitudes the wind in the U.S. is from west to east, therefore, most of the turbulence is located at the eastern side of the mountains.
+2) In contrast, the Great Plains and Great Lakes states (North Dakota, South Dakota, Minnesota, Iowa, Wisconsin) present the lowest levels of turbulence in the U.S., with the flat terrain being an important factor. The plains are also sheltered from the Pacific and Atlantic winds by the Rockies and Appalachians. These two factors bring a peaceful patch of air with very low turbulence levels.
+3) Lastly, turbulence levels around the south (Texas, Louisiana, Mississippi) are also large due to the Gulf of Mexico's warm waters, which enhance convection, moisture, and instability in the atmosphere. Land-sea breezes, warm eddies from the Loop Current, and river plume interactions further contribute to vertical air movement and turbulent weather. Additionally, the region is frequently impacted by tropical systems that intensify atmospheric disturbances.
 
 ## Results
 Four classifiers were built: Random Forest, Decision Tree, XGBoost, and CatBoost
